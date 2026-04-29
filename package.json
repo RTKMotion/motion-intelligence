@@ -1,0 +1,29 @@
+{
+  "name": "@rtkmotion/motion-intelligence",
+  "version": "1.2.0",
+  "description": "Manifest repository for the RTK Motion MCP server. Hosted at https://api.rtkmotion.io/mcp.",
+  "homepage": "https://www.rtkmotion.io",
+  "bugs": {
+    "url": "https://github.com/RTKMotion/motion-intelligence/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RTKMotion/motion-intelligence.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "motion-capture",
+    "mocap",
+    "biomechanics",
+    "rehabilitation",
+    "threat-intelligence",
+    "x402",
+    "usdc",
+    "agent-to-agent",
+    "paid-data",
+    "ecdsa-provenance"
+  ],
+  "author": "Karl Keller <karl@rtkmotion.io>",
+  "license": "MIT"
+}

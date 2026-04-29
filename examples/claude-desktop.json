@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rtk-motion": {
+      "type": "streamable-http",
+      "url": "https://api.rtkmotion.io/mcp"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/connector.json",
+  "maintainers": [
+    {
+      "name": "Karl Keller",
+      "email": "karl@rtkmotion.io"
+    }
+  ]
+}
