@@ -96,6 +96,13 @@ Every paid record is signed with ECDSA (secp256k1) by `0x6C11F8a21f7ca922F483Ed2
 
 < 500 ms typical for free tools. Cloudflare Workers global edge deployment.
 
+## Specifications
+
+- [**Shared-Frame Multi-Actor Motion Capture — a delivery specification**](./docs/SHARED_FRAME_MOCAP_SPEC.md)
+  — a vendor-neutral spec for delivering multi-actor mocap without destroying
+  inter-actor geometry, with a pre-purchase verification procedure a buyer can
+  run against any supplier. Draft, published for comment.
+
 ## Source
 
 This is a manifest repository for the hosted MCP server. The server implementation runs on Cloudflare Workers; the implementation source is private. For technical questions, partnership, or custom integration: [`support@rtkmotion.io`](mailto:support@rtkmotion.io).
