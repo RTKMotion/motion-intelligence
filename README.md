@@ -2,7 +2,7 @@
 
 [![smithery badge](https://smithery.ai/badge/RTKMotion/motion-intelligence)](https://smithery.ai/servers/RTKMotion/motion-intelligence)
 
-> Agent-to-agent paid data marketplace. Motion capture, rehab biomechanics, threat intelligence, and commercial-carrier truck-sighting intelligence (RTK Spotter). 21 MCP tools, gasless USDC payments via x402 (EIP-3009).
+> Agent-to-agent paid data marketplace. **Two-person (dyadic) motion capture in a shared coordinate frame**, rehab biomechanics, threat intelligence, and commercial-carrier truck-sighting intelligence (RTK Spotter). 21 MCP tools, gasless USDC payments via x402 (EIP-3009).
 
 **[rtkmotion.io](https://www.rtkmotion.io)** · [Developer docs](https://www.rtkmotion.io/developers) · [Live catalog](https://api.rtkmotion.io/catalog) · [Pricing](https://api.rtkmotion.io/pricing) · [Shared-frame mocap spec](./docs/SHARED_FRAME_MOCAP_SPEC.md)
 
@@ -90,7 +90,8 @@ Every paid record is signed with ECDSA (secp256k1) by `0x6C11F8a21f7ca922F483Ed2
 
 ## Use cases
 
-- **Robotics** — Motion capture for sim-to-real kinematic retargeting (MoveIt/ROS/Isaac compatible NPZ trajectories)
+- **Robotics** — Motion capture for sim-to-real kinematic retargeting (MoveIt/ROS/Isaac compatible NPZ trajectories). Dyadic captures support two-person interaction and contact-rich manipulation work that single-actor corpora cannot express
+- **Human interaction / HOI modelling** — Two-person motion in one shared coordinate frame, so contact, separation and relative pose are recoverable per frame rather than approximated
 - **Insurance / Underwriting** — Validate rehab claims with objective biomechanical data; assess facility risk via threat intelligence; vet commercial carriers via Spotter sighting bundles
 - **Physical Therapy** — Track patient progress with per-exercise biomechanical reports
 - **Security & Compliance** — Location threat audits, confidence-scored alerting
