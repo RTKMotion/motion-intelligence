@@ -4,11 +4,13 @@
 
 > Agent-to-agent paid data marketplace. Motion capture, rehab biomechanics, threat intelligence, and commercial-carrier truck-sighting intelligence (RTK Spotter). 21 MCP tools, gasless USDC payments via x402 (EIP-3009).
 
+**[rtkmotion.io](https://www.rtkmotion.io)** · [Developer docs](https://www.rtkmotion.io/developers) · [Live catalog](https://api.rtkmotion.io/catalog) · [Pricing](https://api.rtkmotion.io/pricing) · [Shared-frame mocap spec](./docs/SHARED_FRAME_MOCAP_SPEC.md)
+
 ## What is this?
 
 A live, hosted **Model Context Protocol** server providing agent-to-agent paid access to:
 
-- **4D Motion Capture** — BVH skeletal animation, multi-view video, robot-ready joint trajectories (NPZ)
+- **4D Motion Capture** — BVH skeletal animation, multi-view video, robot-ready joint trajectories (NPZ). **Two-person (dyadic) capture in a shared coordinate frame**: both actors' global root translation and orientation are preserved in one capture-volume frame, so contact, separation and relative pose are recoverable directly from the files. Most released datasets canonicalize each actor to its own origin, which destroys inter-actor geometry irreversibly — see the [specification](./docs/SHARED_FRAME_MOCAP_SPEC.md) and its pre-purchase verification procedure
 - **Rehabilitation Biomechanics** — cross-exercise summaries, per-exercise reports, ROM and asymmetry metrics
 - **Location Threat Intelligence** — confidence-scored alerts, event distribution, temporal context
 - **RTK Spotter — Commercial Vehicle Intelligence** — de-identified commercial-carrier truck sightings (per-USDOT bundles) plus a geo-stripped truck-recognition CV/OCR training corpus. Commercial carriers only; faces + bystander plates blurred; FMCSA-public labels (USDOT, carrier, equipment)
@@ -77,6 +79,8 @@ Every paid record is signed with ECDSA (secp256k1) by `0x6C11F8a21f7ca922F483Ed2
 
 | Surface | URL |
 |---|---|
+| Website | [`rtkmotion.io`](https://www.rtkmotion.io) · [developer docs](https://www.rtkmotion.io/developers) |
+| Glama connector | [`glama.ai/mcp/servers/RTKMotion/motion-intelligence`](https://glama.ai/mcp/servers/RTKMotion/motion-intelligence) |
 | Smithery catalog | [`smithery.ai/servers/RTKMotion/motion-intelligence`](https://smithery.ai/servers/RTKMotion/motion-intelligence) |
 | MCP Server Registry | `io.rtkmotion/data` ([listing](https://registry.modelcontextprotocol.io/v0/servers?search=rtkmotion)) |
 | A2A Agent Card | [`api.rtkmotion.io/.well-known/agent.json`](https://api.rtkmotion.io/.well-known/agent.json) |
@@ -102,6 +106,7 @@ Every paid record is signed with ECDSA (secp256k1) by `0x6C11F8a21f7ca922F483Ed2
   — a vendor-neutral spec for delivering multi-actor mocap without destroying
   inter-actor geometry, with a pre-purchase verification procedure a buyer can
   run against any supplier. Draft, published for comment.
+  Canonical URL: `https://github.com/RTKMotion/motion-intelligence/blob/main/docs/SHARED_FRAME_MOCAP_SPEC.md`
 
 ## Source
 
