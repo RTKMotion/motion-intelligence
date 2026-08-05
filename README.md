@@ -69,7 +69,16 @@ See [`examples/`](./examples) for ready-to-use config snippets and a minimal Pyt
 | `get_spotter_cv_sample` | $0.25 | Trial slice of the truck CV/OCR corpus |
 | `get_spotter_cv` | $50 | Full geo-stripped truck-recognition CV/OCR training corpus |
 
-Payment via the [x402 payment protocol](https://www.x402.org/) on Base, Ethereum, or Solana. The preferred path is gasless x402 `exact` / EIP-3009 — the agent signs a single-use transfer authorization and passes it as `x_payment` (no gas for the buyer); a legacy on-chain `payment_tx` is also accepted (and is the path for Solana). Full pricing detail at [`api.rtkmotion.io/pricing`](https://api.rtkmotion.io/pricing).
+Payment in USDC via the [x402 payment protocol](https://www.x402.org/). Which
+networks are available depends on the flow:
+
+| Flow | Networks | How |
+|---|---|---|
+| **Gasless x402** `exact` / EIP-3009 *(preferred)* | Base | Agent signs a single-use transfer authorization and passes it as `x_payment` — no gas for the buyer |
+| **On-chain `payment_tx`** *(legacy, MCP tools)* | Base · Ethereum · Solana | Send USDC, then supply the settled transaction hash |
+| **HTTP `/paid/*` routes** | Base only | CDP-facilitated; the 402 challenge advertises `eip155:8453` |
+
+Full pricing detail at [`api.rtkmotion.io/pricing`](https://api.rtkmotion.io/pricing).
 
 ### Provenance
 
