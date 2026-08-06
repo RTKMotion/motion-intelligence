@@ -1,5 +1,7 @@
 # RTK Motion Intelligence — MCP Server
 
+[![MCP Toplist](https://mcptoplist.com/badge/io.rtkmotion%2Fdata.svg)](https://mcptoplist.com/server/io.rtkmotion%2Fdata)
+
 [![smithery badge](https://smithery.ai/badge/RTKMotion/motion-intelligence)](https://smithery.ai/servers/RTKMotion/motion-intelligence)
 
 > Agent-to-agent paid data marketplace. **Two-person (dyadic) motion capture in a shared coordinate frame**, rehab biomechanics, threat intelligence, and commercial-carrier truck-sighting intelligence (RTK Spotter). 21 MCP tools, gasless USDC payments via x402 (EIP-3009).
